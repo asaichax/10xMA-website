@@ -1,0 +1,56 @@
+.bodyStyles {
+    font-family: 'Audiowide';
+    font-size: 12px;
+    padding-top: 170px;
+    /* Height of the navbar */
+    padding-bottom: 170px;
+    /* Height of the footer */
+}
+
+.navbar-brand{
+    padding:0;
+}
+
+.navbar-brand img { 
+    padding:0;
+    margin:0;
+}
+
+.navbar{
+    padding:0;
+}
+
+.dropdown-item{
+    font-family: 'Audiowide';
+    font-size: 12px;
+
+}
+
+
+footer {
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer{
+    color:white;
+    padding: 20px 0;
+}
+
+.footer-element{
+    padding: 10px;
+}
+
+.footer-element a{
+    text-decoration: none;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+}
