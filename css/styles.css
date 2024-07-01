@@ -1,23 +1,17 @@
 .bodyStyles {
     font-family: 'Audiowide';
     font-size: 12px;
-    padding-top: 170px;
+}
+
+.navbar-nav{
+    justify-content: center;
+}
+
+.bodyContent{
+    padding-top: 200px;
     /* Height of the navbar */
-    padding-bottom: 170px;
+    padding-bottom: 200px;
     /* Height of the footer */
-}
-
-.navbar-brand{
-    padding:0;
-}
-
-.navbar-brand img { 
-    padding:0;
-    margin:0;
-}
-
-.navbar{
-    padding:0;
 }
 
 .dropdown-item{
@@ -25,6 +19,38 @@
     font-size: 12px;
 
 }
+
+
+.line-with-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+.line-with-text::before,
+.line-with-text::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+.line-with-text::before {
+    margin-right: 10px;
+}
+.line-with-text::after {
+    margin-left: 10px;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: bisque; /* Text color */
+}
+.banner img {
+    width: 100%; /* Ensure image fills the container */
+    height: 300px;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
 
 
 footer {
