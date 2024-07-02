@@ -1,23 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    box-sizing: border-box;
+}
+
+
 .bodyStyles {
     font-family: 'EB Garamond';
     font-size: 17px;
 }
 
-.navbar-nav{
-    justify-content: center;
+.navbar{
+    margin-bottom: 0%;
+    font-size: 15px;
+}
+
+.collapse{
+    padding-left: 5%;
 }
 
 .bodyContent{
-    padding-top: 200px;
+    padding-top: 137px;
     /* Height of the navbar */
-    padding-bottom: 200px;
+    padding-bottom: 180px;
     /* Height of the footer */
 }
 
-.dropdown-item{
-    font-family: 'Audiowide';
-    font-size: 12px;
+.navbar-nav .nav-link{
+    color:black;
+    transition: color 0.3s
+    transform-origin: center;
+}
 
+
+.navbar-nav .dropdown-item{
+    transform-origin: center;
+}
+
+.navbar-nav .nav-link:hover{
+    color: blue;
+    transform: scale(1.1) translateX(0);
+}
+
+.dropdown-toggle:hover{
+    color: blue;
+    transform: scale(1.1);
+}
+
+.navbar-nav .dropdown-item:hover{
+    color: blue;
+    transform: scale(1.1) translateX(0);
+}
+
+.dropdown-item{
+    font-family: 'EB Garamond';
+    font-size: 15px;
+
+}
+
+.bold-text{
+    font-weight: bold;
 }
 
 
@@ -41,15 +85,73 @@
 }
 
 .banner {
+    width: 100%; /* Ensure image fills the container */
+    height: 600px;
     position: relative;
-    text-align: center;
-    color: bisque; /* Text color */
+
 }
 .banner img {
     width: 100%; /* Ensure image fills the container */
-    height: 300px;
-    object-fit: cover; /* Maintain aspect ratio */
+    height: 100%;
+    object-fit: fill; /* Maintain aspect ratio */
 }
+
+.aboutUs{
+    display: flex;
+    align-items: stretch;
+}
+
+.aboutUs div{
+    padding:20px;
+    border-right: 2px solid #000;    
+}
+
+.aboutUs div:last-child{
+    border-right: none;
+}
+
+h4{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.meetCoach{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.meetCoach img{
+    width: 500px;
+    height: 500px;
+}
+
+.meetCoach p{
+    margin:0;
+}
+
+/* Custom CSS for adjusting carousel display */
+.carousel-item {
+    display: none;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item.active{
+    display: flex;
+}
+
+.carousel-inner .carousel-item img {
+    width: 100%;
+    height: auto;
+
+}
+
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
 
 
 
@@ -57,9 +159,10 @@ footer {
     background-color: black;
     padding: 20px 0;
     text-align: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+    margin-top:100%;
 }
 
 .footer{
