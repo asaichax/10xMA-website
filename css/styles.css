@@ -112,7 +112,6 @@
 
 h4{
     text-align: center;
-    text-decoration: underline;
 }
 
 .meetCoach{
@@ -143,6 +142,7 @@ h4{
 .carousel-inner .carousel-item img {
     width: 100%;
     height: auto;
+    border: 2px solid black;
 
 }
 
